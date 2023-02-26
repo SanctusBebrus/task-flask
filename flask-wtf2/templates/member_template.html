@@ -1,0 +1,38 @@
+{% extends "template.html" %}
+
+{% block content %}
+<div class="text-box">
+        <h2 class="text-mod">{{name}}</h2>
+        <h3 class="text-mod">{{prof}}</h3>
+        <figure class="fig">
+            {% if name=="Сахаров" %}
+                <img src="/static/img/ded.jpg" alt="Тут должна быть ваша картинка">
+
+            {% elif name=="Стрелок" %}
+                <img src="/static/img/gunslinger.png" alt="Тут должна быть ваша картинка">
+
+            {% elif name=="Маслина" %}
+                <img src="/static/img/bandit.jpg" alt="Тут должна быть ваша картинка">
+
+            {% elif name=="Ашот" %}
+                <img src="/static/img/ashot.jpg" alt="Тут должна быть ваша картинка">
+
+            {% elif name=="Волк" %}
+                <img src="/static/img/wolf.jpg" alt="Тут должна быть ваша картинка">
+
+            {% elif name=="Шрам" %}
+                <img src="/static/img/scar.jpg" alt="Тут должна быть ваша картинка">
+
+            {% elif name=="Сидорович" %}
+                <img src="/static/img/sidor.jpg" alt="Тут должна быть ваша картинка">
+
+            {% elif name=="Круглов" %}
+                <img src="/static/img/kruglov.jpg" alt="Тут должна быть ваша картинка">
+
+            {% elif name=="Лебедев" %}
+                <img src="/static/img/lebedev.jpg" alt="Тут должна быть ваша картинка">
+            {% endif %}
+        </figure>
+    </div>
+
+{% endblock %}
