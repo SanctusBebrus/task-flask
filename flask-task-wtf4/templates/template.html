@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="for-div text-mod">
+    <h2 class="text-mod">Размещение по каютам</h2>
+    {% set cabin = "Каюта №" %}
+    {% for person in team %}
+        {% if loop.first %}
+            <ul>{{ person }} - {{cabin}} {{loop.index}} - капитан корабля</ul>
+        {% else %}
+            <ul>{{ person }} - {{cabin}} {{loop.index}}</ul>
+        {% endif %}
+    {% endfor %}
+</div>
+
+{% endblock %}
