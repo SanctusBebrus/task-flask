@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>/list_prof/{{ s }}</title>
+</head>
+<body>
+    <h1>Миссия колонизации Марса</h1>
+    {% if s == "ul" %}
+        <ul>
+            {% for i in professions %}
+                <li>{{ i }}</li>
+            {% endfor %}
+        </ul>
+    {% elif s == "ol" %}
+        <ol>
+            {% for i in professions %}
+                <li>{{ i }}</li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <h1>Ошибка</h1>
+    {% endif %}
+</body>
+</html>
